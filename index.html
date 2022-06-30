@@ -1,1 +1,105 @@
-<h1>Hello, world!</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lunatalied</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="hea der">
+    <h2>Lunatalied portfolio</h2>
+  </div>
+  
+  <div class="container"> 
+    <section id="photo-wall">
+      <ul>
+        <li>
+          <img src="img/altrock.png" alt="picture" onclick="onClick(this)">
+          <h3>First work</h3>
+          <p>It is a long established fact that m Ipsum as their default model text, and a search</p>
+        </li>
+        <li>
+          <img src="img/altrock2.png" alt="picture" onclick="onClick(this)">
+          <h3>Course job</h3>
+          <p>It is a long established fact that a reader wille Lorem Ipsum as their default model text, and a search</p>
+        </li>
+        <li>
+          <img src="img/kurt.png" alt="picture" onclick="onClick(this)">
+          <h3>Just for fun</h3>
+          <p>It is a long established fact tha look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search</p>
+        </li>
+        <li>
+          <img src="img/game.png" alt="picture" onclick="onClick(this)">
+          <h3>Work task</h3>
+          <p>It is a longof letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search</p>
+        </li>
+        <li>
+          <img src="img/game.png" alt="picture" onclick="onClick(this)">
+          <h3>Work task</h3>
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search</p>
+        </li>
+        <li>
+          <img src="img/altrock.png" alt="picture" onclick="onClick(this)">
+          <h3>First work</h3>
+          <p>It is a long established fact that m Ipsum as their default model text, and a search</p>
+        </li>
+        <li>
+          <img src="img/altrock2.png" alt="picture" onclick="onClick(this)">
+          <h3>Course job</h3>
+          <p>It is a long established fact that a reader wille Lorem Ipsum as their default model text, and a search</p>
+        </li>
+        <li>
+          <img src="img/kurt.png" alt="picture" onclick="onClick(this)">
+          <h3>Just for fun</h3>
+          <p>It is a long established fact tha look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search</p>
+        </li>
+        <li>
+          <img src="img/game.png" alt="picture" onclick="onClick(this)">
+          <h3>Work task</h3>
+          <p>It is a longof letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search</p>
+        </li>
+        <li>
+          <img src="img/game.png" alt="picture" onclick="onClick(this)">
+          <h3>Work task</h3>
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search</p>
+        </li>
+        <li>
+          <img src="img/kurt.png" alt="picture" onclick="onClick(this)">
+          <h3>Just for fun</h3>
+          <p>It is a long established fact tha look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search</p>
+        </li>
+      </ul>
+    </section>  
+  </div>
+  
+  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style="width:100%">
+  </div>
+</div>
+  
+  <div class="footer">
+    <ul>
+      <li>
+        <a  target="_blank" href="https://vk.com/lunatalied"><img src="img/vk.png" alt="VK"></a>
+      </li>
+    </ul>
+  </div>
+  
+  
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+</script>
+  
+</body>
+</html>

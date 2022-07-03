@@ -131,8 +131,9 @@ body{
 
 .story_card img{
     margin: 60px 40px;
-    width: 600px;
+    width: 300px;
     height: 400px;
+    object-fit: cover;
 }
 
 

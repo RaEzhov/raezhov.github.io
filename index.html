@@ -5,18 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <a id="arrow_up" href="#header">
+        ^
+    </a>
+    <header id="header">
         <a class="logo" href="index.html">COFFEE HOUSE</a>
         <nav class="menu">
             <ul class="menu_ul">
                 <li class="menu_li">
                     <a class="menu_link" href="#home">HOME</a>
+                </li>
+                <li class="menu_li">
+                    <a class="menu_link" href='#order'>ORDER</a>
                 </li>
                 <li class="menu_li">
                     <a class="menu_link" href="#story">STORY</a>
@@ -37,6 +43,59 @@
             </div>
             <div class="home_line"></div>
         </div>
+        <section id="order">
+            <div class="order_title">
+                <p>MAKE AN ORDER</p>
+            </div>
+            <section class="name_surname">
+                <input class="first_name" type="text" placeholder="First name*">
+                <input class="second_name" type="text" placeholder="Second name">
+            </section>
+            <section class="order_menu">
+                <div class="drinks">
+                    <div class="menu_item">
+                        <label class="menu_label" name="espresso">    
+                            <input class="menu_checkbox" type="checkbox" name="espresso" value="1.5">Espresso 1.50$.</label>
+                        <input name="espresso" class="menu_input" type="number" min="0" max="10" value="0" step="1">
+                    </div>
+                    <div class="menu_item">
+                        <label class="menu_label" name="latte">    
+                            <input class="menu_checkbox" type="checkbox" name="latte" value="2">Latte 2.00$.</label>
+                        <input name="latte" class="menu_input" type="number" min="0" max="10" value="0" step="1">
+                    </div>
+                    <div class="menu_item">
+                        <label class="menu_label" name="capuchino">    
+                            <input class="menu_checkbox" type="checkbox" name="capuchino" value="2.2">Cappuccino 2.20$.</label>
+                        <input name="capuchino" class="menu_input" type="number" min="0" max="10" value="0" step="1">
+                    </div>
+                    <div class="menu_item">
+                        <label class="menu_label" name="americano">    
+                            <input class="menu_checkbox" type="checkbox" name="americano" value="1.7">Americano 1.70$.</label>
+                        <input name="americano" class="menu_input" type="number" min="0" max="10" value="0" step="1">
+                    </div>
+                </div>
+                <div class="eat">
+                    <div class="menu_item">
+                        <label class="menu_label" name="chocolate_cake">    
+                            <input class="menu_checkbox" type="checkbox" name="chocolate_cake" value="1.3">Chocolate muffin 1.30$.</label>
+                        <input name="chocolate_cake" class="menu_input" type="number" min="0" max="10" value="0" step="1">
+                    </div>
+                    <div class="menu_item">
+                        <label class="menu_label" name="blueberry_cake">    
+                            <input class="menu_checkbox" type="checkbox" name="blueberry_cake" value="1.4">Blueberry muffin 1.40$.</label>
+                        <input name="blueberry_cake" class="menu_input" type="number" min="0" max="10" value="0" step="1">
+                    </div>
+                    <div class="menu_item">
+                        <label class="menu_label" name="apple_tart">    
+                            <input class="menu_checkbox" type="checkbox" name="apple_tart" value="1.75">Apple tart 1.75$р.</label>
+                        <input name="apple_tart" class="menu_input" type="number" min="0" max="10" value="0" step="1">
+                    </div>
+                </div>
+
+            </section>
+            <div class="total">Total: <p class="total_cost" style="display: inline;">0</p> $.</div>
+            <div class="checkout"><button>CHECKOUT</button></div>
+        </section>
         <section id="story">
             <div class="story_title">STORY</div>
             <div class="story_card">
@@ -76,6 +135,7 @@
     <footer class="footer">
         <div class="footer_copyright">© COPYRIGHT 2021</div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
 

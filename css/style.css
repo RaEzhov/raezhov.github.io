@@ -12,6 +12,7 @@ body, input, button{
 }
 
 #arrow_up{
+    opacity: 0;
     position: fixed;
     right: 40px;
     bottom: 40px;
